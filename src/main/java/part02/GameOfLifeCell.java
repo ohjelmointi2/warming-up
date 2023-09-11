@@ -1,13 +1,12 @@
 package part02;
 
-import java.util.Collections;
 import java.util.List;
 
 /**
- * > - Any live cell with two or three live neighbours survives.
+ * > "- Any live cell with two or three live neighbours survives.
  * > - Any dead cell with three live neighbours becomes a live cell.
  * > - All other live cells die in the next generation. Similarly, all other
- * > dead cells stay dead.
+ * > dead cells stay dead."
  * >
  * > https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
  */
@@ -16,20 +15,17 @@ public enum GameOfLifeCell {
     LIVE, DEAD;
 
     public GameOfLifeCell getNextGeneration(List<GameOfLifeCell> neighbours) {
-        var living = Collections.frequency(neighbours, LIVE);
-
-        // "Any live cell with two or three live neighbours survives."
-        if (this == LIVE && (living == 2 || living == 3)) {
-            return LIVE;
-        }
-
-        // "Any dead cell with three live neighbours becomes a live cell."
-        if (this == DEAD && living == 3) {
-            return LIVE;
-        }
-
-        // "All other live cells die in the next generation. Similarly, all other dead
-        // cells stay dead."
+        /*
+         * There are only two objects of this type: LIVE and DEAD.
+         * `this` is either one of them.
+         *
+         * You can check which object the method was called by comaring `this == LIVE`
+         * or `this == DEAD`.
+         *
+         * Can calculate the number of `LIVE` neighbours in the given list and use
+         * that count to determine if this cell is `LIVE` or `DEAD` in the next
+         * generation. Finally, return either `LIVE` or `DEAD` as your answer.
+         */
         return DEAD;
     }
 }

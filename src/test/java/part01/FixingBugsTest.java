@@ -27,16 +27,16 @@ public class FixingBugsTest {
 
     @Test
     void testNameOfWeekday() {
-        assertEquals("maanantai", fixes.nameOfWeekday(0));
-        assertEquals("tiistai", fixes.nameOfWeekday(1));
-        assertEquals("keskiviikko", fixes.nameOfWeekday(2));
-        assertEquals("sunnuntai", fixes.nameOfWeekday(6));
+        assertEquals("maanantai", fixes.finnishNameOfDay(1));
+        assertEquals("tiistai", fixes.finnishNameOfDay(2));
+        assertEquals("keskiviikko", fixes.finnishNameOfDay(3));
+        assertEquals("sunnuntai", fixes.finnishNameOfDay(7));
     }
 
     @Test
     void testParseYesOrNo() {
-        assertTrue(fixes.parseYesOrNo("Yes"));
-        assertFalse(fixes.parseYesOrNo("No"));
+        assertTrue(fixes.parseYesOrNo("Yes"), "`Yes` should be true");
+        assertFalse(fixes.parseYesOrNo("No"), "`No` should be false");
     }
 
     @Test
