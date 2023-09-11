@@ -2,6 +2,7 @@ package part04;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.util.Collections;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
@@ -17,9 +18,26 @@ public class ClassesAndObjectsTest {
             new Person("Chandler", 31));
 
     @Test
-    void testGenerateNamesString() {
+    void testNameStringWithEmptyArray() {
         var obj = new ClassesAndObjects();
+        assertEquals("", obj.generateNamesString(Collections.emptyList()));
+    }
 
+    @Test
+    void testNameStringWithTwoPeople() {
+        var obj = new ClassesAndObjects();
         assertEquals("Rachel and Monica", obj.generateNamesString(people.subList(0, 2)));
+    }
+
+    @Test
+    void testNameStringWithThreePeople() {
+        var obj = new ClassesAndObjects();
+        assertEquals("Rachel, Monica and Ross", obj.generateNamesString(people.subList(0, 3)));
+    }
+
+    @Test
+    void testNameStringWithSixPeople() {
+        var obj = new ClassesAndObjects();
+        assertEquals("Rachel, Monica and 4 others", obj.generateNamesString(people));
     }
 }
