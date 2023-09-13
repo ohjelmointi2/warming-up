@@ -8,12 +8,17 @@
 
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
-    id 'java'
+    id 'application'
 }
 
 java {
     sourceCompatibility = 17
     targetCompatibility = 17
+}
+
+application {
+    // Define the main class for the application.
+    mainClass = 'part02.GameOfLife'
 }
 
 repositories {
@@ -41,3 +46,8 @@ tasks.named('test') {
     }
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': application.mainClass
+    }
+}
