@@ -38,8 +38,7 @@ public class Grid {
 
             List<CellStatus> neighbourStatuses = neighborStatuses(coord.getNeighbours());
 
-            CellStatus currentStatus = cells.getOrDefault(coord, CellStatus.DEAD);
-            CellStatus nextStatus = currentStatus.getNextGeneration(neighbourStatuses);
+            CellStatus nextStatus = getStatus(coord).getNextGeneration(neighbourStatuses);
 
             newGeneration.setStatus(coord, nextStatus);
         }
