@@ -8,7 +8,7 @@ import java.util.List;
  *
  * This exercise has been written with the aid of ChatGPT.
  */
-public class ClassesAndObjects {
+public class ObjectsExercise {
 
     /**
      * Generates a formatted string from a list of Person objects, representing
@@ -22,8 +22,10 @@ public class ClassesAndObjects {
      * - If the list contains only one person, their name is returned ("Rachel").
      * - If the list contains two people, their names are joined with "and" in
      * between ("Rachel and Monica").
-     * - If the list contains more than two people, the names of the first three
-     * people are listed, followed by "and X others," where X is the number of
+     * - If the list contains three people, all names are included and a comma is
+     * used between first two names ("Rachel, Monica and Ross")
+     * - If the list contains more than three people, the names of the first two
+     * people are listed, followed by "and X others", where X is the number of
      * remaining people ("Rachel, Monica and 4 others").
      *
      * @param people A list of Person objects to generate the names string from.
