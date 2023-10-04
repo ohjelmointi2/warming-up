@@ -19,4 +19,11 @@ public class PersonTest {
 
         assertEquals("Monica", monica.getName());
     }
+
+    @Test
+    void testToString() {
+        var rachel = new Person("Rachel", 28);
+
+        assertEquals("Person [name=Rachel, age=28]", rachel.toString());
+    }
 }

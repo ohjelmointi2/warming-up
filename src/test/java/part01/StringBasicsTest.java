@@ -12,6 +12,23 @@ public class StringBasicsTest {
     private StringBasics solution = new StringBasics();
 
     @Test
+    void testTruncate() {
+        assertEquals("He", solution.truncate("Hello", 2));
+        assertEquals("Hello", solution.truncate("Hello", 5));
+        assertEquals("Hello", solution.truncate("Hello", 10));
+    }
+
+    @Test
+    void testParseYesOrNo() {
+        assertTrue(solution.parseYesOrNo("yes"), "yes in lower case");
+        assertTrue(solution.parseYesOrNo("YES"), "yes in upper case");
+        assertTrue(solution.parseYesOrNo("Yes"), "yes with first letter in upper case");
+        assertFalse(solution.parseYesOrNo("no"), "no in lower case");
+        assertFalse(solution.parseYesOrNo("NO"), "no in upper case");
+        assertFalse(solution.parseYesOrNo("No"), "no with first letter in upper case");
+    }
+
+    @Test
     void testGetFizzBuzz() {
         assertEquals("1", solution.getFizzBuzz(1));
         assertEquals("2", solution.getFizzBuzz(2));
@@ -28,22 +45,5 @@ public class StringBasicsTest {
         assertEquals("13", solution.getFizzBuzz(13));
         assertEquals("14", solution.getFizzBuzz(14));
         assertEquals("FizzBuzz", solution.getFizzBuzz(15));
-    }
-
-    @Test
-    void testParseYesOrNo() {
-        assertTrue(solution.parseYesOrNo("yes"), "yes in lower case");
-        assertTrue(solution.parseYesOrNo("YES"), "yes in upper case");
-        assertTrue(solution.parseYesOrNo("Yes"), "yes with first letter in upper case");
-        assertFalse(solution.parseYesOrNo("no"), "no in lower case");
-        assertFalse(solution.parseYesOrNo("NO"), "no in upper case");
-        assertFalse(solution.parseYesOrNo("No"), "no with first letter in upper case");
-    }
-
-    @Test
-    void testTruncate() {
-        assertEquals("He", solution.truncate("Hello", 2));
-        assertEquals("Hello", solution.truncate("Hello", 5));
-        assertEquals("Hello", solution.truncate("Hello", 10));
     }
 }

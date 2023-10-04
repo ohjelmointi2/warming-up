@@ -11,20 +11,6 @@ public class CollectionsBasicsTest {
     private CollectionsBasics solution = new CollectionsBasics();
 
     @Test
-    void testConcatenateFooBarBaz() {
-        String result = solution.concatenateStrings(List.of("foo", "bar", "baz"));
-
-        assertEquals("foobarbaz", result);
-    }
-
-    @Test
-    void testConcatenateProgrammingLanguages() {
-        String result = solution.concatenateStrings(List.of("Java", "Python", "TypeScript"));
-
-        assertEquals("JavaPythonTypeScript", result);
-    }
-
-    @Test
     void testMaximum() {
         List<Integer> numbers = List.of(1, 2, 300, 4, 5);
 
@@ -36,6 +22,20 @@ public class CollectionsBasicsTest {
         List<Integer> numbers = List.of(1, 2, 3, 4, 5);
 
         assertEquals(15, solution.sum(numbers));
+    }
+
+    @Test
+    void testConcatenateFooBarBaz() {
+        String result = solution.concatenateStrings(List.of("foo", "bar", "baz"));
+
+        assertEquals("foobarbaz", result);
+    }
+
+    @Test
+    void testConcatenateProgrammingLanguages() {
+        String result = solution.concatenateStrings(List.of("Java", "Python", "TypeScript"));
+
+        assertEquals("JavaPythonTypeScript", result);
     }
 
     @Test

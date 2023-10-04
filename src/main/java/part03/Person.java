@@ -39,4 +39,12 @@ public class Person {
     public String getName() {
         return null; // TODO: implement this method
     }
+
+    /**
+     * Returns a string representation of the person.
+     */
+    @Override
+    public String toString() {
+        return "Person [name=" + getName() + ", age=" + getAge() + "]";
+    }
 }

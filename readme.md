@@ -28,7 +28,7 @@ git clone https://github.com/varmista-etta-github-tunnuksesi-on-repositorion-oso
 Saatuasi tehtävän valmiiksi päivitä tekemäsi muutokset etärepositorioon `git add`-, `git commit`- ja `git push`-komennoilla. Tarkemmat ohjeet löydät kurssin materiaaleista ja Git-oppaista.
 
 
-### Osa 1: merkkijonot (kertaus, 1 piste)
+### Osa 1: merkkijonot *(kertaus, 1 piste)*
 
 Java-luokassa [StringBasics](./src/main/java/part01/StringBasics.java) on metodeja, joista osa on virheellisiä ja osa toteuttamatta. Tehtävän ensimmäisessä osassa sinun tulee korjata ja täydentää nämä metodit. Tarkemmat selostukset kunkin metodin oikeasta toiminnasta löydät kunkin metodin kommenteista.
 
@@ -48,7 +48,7 @@ gradlew.bat test --tests StringBasicsTest    # windows
 💡 *Sinun ei tarvitse perehtyä varsinaisen testin tekniseen toteutukseen. Tässä vaiheessa riittää, että suoritat testit ja tutustut niiden mahdollisesti tuottamiin virheilmoituksiin.*
 
 
-### Osa 2: kokoelmat (kertaus, 1 piste)
+### Osa 2: kokoelmat *(kertaus, 1 piste)*
 
 Tehtävän toisessa osassa sinun tulee toteuttaa [CollectionsBasics](./src/main/java/part02/CollectionsBasics.java)-luokassa olevat metodit. Tarkemmat selostukset kunkin metodin oikeasta toiminnasta löydät kunkin metodin kommenteista.
 
@@ -62,7 +62,7 @@ gradlew.bat test --tests CollectionsBasicsTest    # windows
 🚀 *Tulet todennäköisesti oppimaan kurssin edetessä aivan uusia tapoja näiden metodien toteuttamiseksi. Voit palata näihin metodeihin myöhemmin ja pohtia, miten toteuttaisit ne esimerkiksi Streamien avulla.*
 
 
-### Osa 3: luokat ja oliot (kertaus, 2 pistettä)
+### Osa 3: luokat ja oliot *(kertaus, 2 pistettä)*
 
 Tehtävän kolmannessa osassa sinun tulee ensin täydentää kahta Java-luokkaa:
 
