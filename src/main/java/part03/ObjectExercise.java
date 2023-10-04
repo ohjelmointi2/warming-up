@@ -1,22 +1,23 @@
-package part04;
+package part03;
 
 import java.util.List;
 
 /**
- * Implement the missing parts in Person class. Then complete the method
- * in this class.
+ * First, implement the missing parts in Person class. Then, implement the
+ * methods in this class.
  *
- * This exercise has been written with the aid of ChatGPT.
+ * You can use the JUnit test provided to verify that your implementation works
+ * as expected. You can also write a main method to test your implementations.
  */
-public class ObjectsExercise {
+public class ObjectExercise {
 
     /**
      * Generates a formatted string from a list of Person objects, representing
-     * their names.
+     * their names. This method takes a list of Person objects and generates a
+     * string that represents the names of the people in the list.
      *
-     * This method takes a list of Person objects and generates a string that
-     * represents the names of the people in the list. The formatting of the
-     * resulting string depends on the number of people in the list:
+     * The formatting of the resulting string depends on the number of people in the
+     * list:
      *
      * - If the list is empty, an empty string is returned.
      * - If the list contains only one person, their name is returned ("Rachel").
