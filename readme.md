@@ -17,18 +17,27 @@ git restore muutetun_tiedoston_polku
 ```
 
 
-## Tehtävät
+## Tehtävän aloittaminen
 
-Aloita kloonaa Git-repositorio omalle koneellesi. Harjoitus täytyy tehdä omassa kopiossasi, eli varmista, että repositorion osoitteessa on mukana oma GitHub-käyttäjätunnuksesi! Tarkemmat ohjeet oman kopion luomiseksi löydät oman kurssitoteutuksesi ohjeista:
+Aloita kloonaa Git-repositorio omalle koneellesi. Harjoitus täytyy tehdä omassa kopiossasi, eli varmista, että repositorion osoitteessa on mukana oma GitHub-käyttäjätunnuksesi! Oman kopiosi saat luotua kurssitoteutuksesi tehtävänannon GitHub classroom -linkin kautta.
 
 ```sh
 git clone https://github.com/varmista-etta-github-tunnuksesi-on-repositorion-osoitteessa.git
 ```
 
-Saatuasi tehtävän valmiiksi päivitä tekemäsi muutokset etärepositorioon `git add`-, `git commit`- ja `git push`-komennoilla. Tarkemmat ohjeet löydät kurssin materiaaleista ja Git-oppaista.
+Kloonattuasi projektin omalle koneellesi, avaa se koodieditorissasi.
 
 
-### Osa 1: merkkijonot *(kertaus, 1 piste)*
+## Vastausten lähettäminen
+
+Kun olet saanut osan tai kaikki tehtävistä ratkaistua ja commitoinut vastauksesi, lähetä ratkaisut arvioitavaksi `git push`-komennolla. Git push käynnistää automaattisesti GitHub actions -workflow:n, joka kääntää sekä testaa ratkaisusi ja antaa jokaisesta testistä joko hyväksytyn tai hylätyn tuloksen.
+
+Kun GitHub Actions on saanut koodisi suoritettua, näet tuloksen GitHub-repositoriosi [Actions-välilehdellä](../../actions/workflows/classroom.yml). Arvioinnin valmistumiseen menee tyypillisesti pari minuuttia.
+
+Klikkaamalla yllä olevan linkin takaa viimeisintä *"GitHub Classroom Workflow"* -suoritusta, saat tarkemmat tiedot tehtävän arvioinnista. Sivun alaosassa näkyy saamasi pisteet. Klikkaamalla "Autograding"-otsikkoa pääset katsomaan tarkemmin arvioinnissa suoritetut vaiheet ja niiden tulokset. Kuvitetun ohjeen aiheesta löydät GitHubin dokumentista [View autograding results (github.com)](https://docs.github.com/en/education/manage-coursework-with-github-classroom/learn-with-github-classroom/view-autograding-results).
+
+
+### Osa 1: merkkijonot *(kertaus, 30 %)*
 
 Java-luokassa [StringBasics](./src/main/java/part01/StringBasics.java) on metodeja, joista osa on virheellisiä ja osa toteuttamatta. Tehtävän ensimmäisessä osassa sinun tulee korjata ja täydentää nämä metodit. Tarkemmat selostukset kunkin metodin oikeasta toiminnasta löydät kunkin metodin kommenteista.
 
@@ -48,7 +57,7 @@ gradlew.bat test --tests StringBasicsTest    # windows
 💡 *Sinun ei tarvitse perehtyä varsinaisen testin tekniseen toteutukseen. Tässä vaiheessa riittää, että suoritat testit ja tutustut niiden mahdollisesti tuottamiin virheilmoituksiin.*
 
 
-### Osa 2: kokoelmat *(kertaus, 1 piste)*
+### Osa 2: kokoelmat *(kertaus, 30 %)*
 
 Tehtävän toisessa osassa sinun tulee toteuttaa [CollectionsBasics](./src/main/java/part02/CollectionsBasics.java)-luokassa olevat metodit. Tarkemmat selostukset kunkin metodin oikeasta toiminnasta löydät kunkin metodin kommenteista.
 
@@ -62,7 +71,7 @@ gradlew.bat test --tests CollectionsBasicsTest    # windows
 🚀 *Tulet todennäköisesti oppimaan kurssin edetessä aivan uusia tapoja näiden metodien toteuttamiseksi. Voit palata näihin metodeihin myöhemmin ja pohtia, miten toteuttaisit ne esimerkiksi Streamien avulla.*
 
 
-### Osa 3: luokat ja oliot *(kertaus, 2 pistettä)*
+### Osa 3: luokat ja oliot *(kertaus, 40 %)*
 
 Tehtävän kolmannessa osassa sinun tulee ensin täydentää kahta Java-luokkaa:
 

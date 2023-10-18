@@ -1,6 +1,5 @@
 package part02;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -55,6 +54,6 @@ public class CollectionsBasics {
      * @return A list containing the lengths of the strings in the input list.
      */
     public List<Integer> getLengths(List<String> strings) {
-        return new ArrayList<Integer>(); // TODO: implement this method
+        return null; // TODO: implement this method
     }
 }
