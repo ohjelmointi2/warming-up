@@ -33,10 +33,10 @@ public class StringBasics {
 
     /**
      * Parses a text and returns `true` if it matches the string "yes"
-     * (case-insensitive).
+     * (case-insensitive). All other inputs return `false`.
      *
      * @param text The input text to be parsed.
-     * @return `true` if the text is "yes," otherwise `false`.
+     * @return `true` if the text is "yes" (case-insensitive), otherwise `false`
      */
     public boolean parseYesOrNo(String text) {
         // FIXME: this seems to always return false, even when the `text` is "yes"
