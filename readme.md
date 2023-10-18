@@ -71,7 +71,7 @@ gradlew.bat test --tests CollectionsBasicsTest    # windows
 🚀 *Tulet todennäköisesti oppimaan kurssin edetessä aivan uusia tapoja näiden metodien toteuttamiseksi. Voit palata näihin metodeihin myöhemmin ja pohtia, miten toteuttaisit ne esimerkiksi Streamien avulla.*
 
 
-### Osa 3: luokat ja oliot *(kertaus, 40 %)*
+### Osa 3: luokat ja oliot *(kertaus, 20 + 20 %)*
 
 Tehtävän kolmannessa osassa sinun tulee ensin täydentää kahta Java-luokkaa:
 
