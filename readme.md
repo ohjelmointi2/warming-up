@@ -19,7 +19,7 @@ git restore muutetun_tiedoston_polku
 
 ## Tehtävän aloittaminen
 
-Aloita kloonaa Git-repositorio omalle koneellesi. Harjoitus täytyy tehdä omassa kopiossasi, eli varmista, että repositorion osoitteessa on mukana oma GitHub-käyttäjätunnuksesi! Oman kopiosi saat luotua kurssitoteutuksesi tehtävänannon GitHub classroom -linkin kautta.
+Aloita kloonaamalla Git-repositorio omalle koneellesi. Harjoitus täytyy tehdä omassa kopiossasi, eli varmista, että repositorion osoitteessa on mukana oma GitHub-käyttäjätunnuksesi! Oman kopiosi saat luotua kurssitoteutuksesi tehtävänannon GitHub classroom -linkin kautta.
 
 ```sh
 git clone https://github.com/varmista-etta-github-tunnuksesi-on-repositorion-osoitteessa.git
