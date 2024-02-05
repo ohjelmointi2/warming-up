@@ -50,9 +50,9 @@ public class StringBasics {
     /**
      * Returns the FizzBuzz result for a given number.
      *
-     * If the number is divisible by three, the result is "fizz." If the number is
-     * divisible by five, the result is "buzz." If the number is divisible by both
-     * three and five, the result is "fizzbuzz." Otherwise, the result is the number
+     * If the number is divisible by three, the result is "fizz". If the number is
+     * divisible by five, the result is "buzz". If the number is divisible by both
+     * three and five, the result is "fizzbuzz". Otherwise, the result is the number
      * as a string.
      *
      * See more at https://en.wikipedia.org/wiki/Fizz_buzz
