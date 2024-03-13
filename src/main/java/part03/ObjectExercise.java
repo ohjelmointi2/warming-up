@@ -34,7 +34,7 @@ public class ObjectExercise {
      */
     public String generateNamesString(List<Person> people) {
 
-        // NOTE! The People class needs fixing too. Make sure that the Person class is
+        // NOTE! The Person class needs fixing too. Make sure that the Person class is
         // complete before implementing this method.
 
         return "";
