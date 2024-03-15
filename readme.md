@@ -47,9 +47,9 @@ Voit kirjoittaa metodien testaamiseksi oman `main`-metodin tai hyödyntää luok
 
 Voit suorittaa testit joko koodieditorisi testaustyökalulla ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)) tai [Gradle-automaatiotyökalulla](https://docs.gradle.org/current/userguide/java_testing.html):
 
-```sh
-./gradlew test --tests StringBasicsTest      # unix
-gradlew.bat test --tests StringBasicsTest    # windows
+```
+./gradlew test --tests StringBasicsTest        # unix
+.\gradlew.bat test --tests StringBasicsTest    # windows
 ```
 
 💡 *Jos testit eivät mene läpi, kokeile suorittaa komento uudestaan siten, että lisäät loppuun argumentin `--info`. Näin saat tarkemman tiedon siitä, mikä testissä meni pieleen. Vaihtoehtoisesti voit suorittaa testit koodieditorin testaustyökalulla ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)), joka tyypillisesti näyttää virheet selkeästi.*
@@ -63,9 +63,9 @@ Tehtävän toisessa osassa sinun tulee toteuttaa [CollectionsBasics](./src/main/
 
 Voit kirjoittaa metodien testaamiseksi oman `main`-metodin tai hyödyntää luokan testaamiseksi toteutettuja [JUnit](https://junit.org/)-testejä, jotka löydät luokasta [CollectionsBasicsTest](./src/test/java/part02/CollectionsBasicsTest.java). Voit jälleen suorittaa testit oman koodieditorisi testaustyökalulla tai Gradle-automaatiotyökalulla:
 
-```sh
-./gradlew test --tests CollectionsBasicsTest      # unix
-gradlew.bat test --tests CollectionsBasicsTest    # windows
+```
+./gradlew test --tests CollectionsBasicsTest        # unix
+.\gradlew.bat test --tests CollectionsBasicsTest    # windows
 ```
 
 🚀 *Tulet todennäköisesti oppimaan kurssin edetessä aivan uusia tapoja näiden metodien toteuttamiseksi. Voit palata näihin metodeihin myöhemmin ja pohtia, miten toteuttaisit ne esimerkiksi Streamien avulla.*
@@ -80,14 +80,14 @@ Tehtävän kolmannessa osassa sinun tulee ensin täydentää kahta Java-luokkaa:
 
 Oman toteutuksen testaaminen tapahtuu edellisistä osista tuttuun tapaan oman `main`-metodin tai valmiiden JUnit-yksikkötestien avulla ([PersonTest.java](./src/test/java/part03/PersonTest.java), [ObjectExerciseTest.java](./src/test/java/part03/ObjectExerciseTest.java)). Mikäli käytät Gradle-työkalua, voit suorittaa testit komennolla:
 
-```sh
+```
 # unix
 ./gradlew test --tests PersonTest
 ./gradlew test --tests ObjectExerciseTest
 
 # windows
-gradlew.bat test --tests PersonTest
-gradlew.bat test --tests ObjectExerciseTest
+.\gradlew.bat test --tests PersonTest
+.\gradlew.bat test --tests ObjectExerciseTest
 ```
 
 
