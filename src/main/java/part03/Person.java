@@ -28,7 +28,7 @@ public class Person {
      * @return The age of the person as an integer.
      */
     public int getAge() {
-        return 0; // TOOD: implement this method
+        return 0; // TODO: implement this method
     }
 
     /**
