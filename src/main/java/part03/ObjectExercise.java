@@ -11,6 +11,38 @@ import java.util.List;
  */
 public class ObjectExercise {
 
+    // NOTE! The Person class needs fixing too. Make sure that the Person class is
+    // complete before implementing these methods.
+
+    /**
+     * Returns the names of the people in the list. This method takes a list of
+     * Person objects and returns a list of their names. If the list is empty, an
+     * empty list is returned.
+     *
+     * @param people A list of Person objects to get the names from.
+     * @return A list of names of the people in the list.
+     */
+    public List<String> getNames(List<Person> people) {
+        // hint: you can call the getName() method of each Person on the list
+        return null;
+    }
+
+    /**
+     * Returns the oldest person in the list. This method takes a list of Person
+     * objects and returns the oldest person in the list.
+     *
+     * If the list is empty, null is returned. In case there are multiple people
+     * with the same age, any of them can be returned.
+     *
+     * @param people List of Person objects to find the oldest person from.
+     * @return The oldest person in the list.
+     */
+    public Person getOldest(List<Person> people) {
+        // hint: you can call the getAge() method of each Person on the list and compare
+        // the ages to find the oldest person
+        return null;
+    }
+
     /**
      * Generates a formatted string from a list of Person objects, representing
      * their names. This method takes a list of Person objects and generates a
@@ -33,10 +65,7 @@ public class ObjectExercise {
      * @return A formatted string representing the names of people in the list.
      */
     public String generateNamesString(List<Person> people) {
-
-        // NOTE! The Person class needs fixing too. Make sure that the Person class is
-        // complete before implementing this method.
-
-        return "";
+        // TODO: implement this method
+        return null;
     }
 }
