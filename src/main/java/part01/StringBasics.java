@@ -63,4 +63,51 @@ public class StringBasics {
     public String getFizzBuzz(int number) {
         return "fizzbuzz"; // TODO: implement this method
     }
+
+    /**
+     * Returns a new string with the given text centered inside. Spaces are added to
+     * the left and right sides of the text to make it centered. The total width of
+     * the returned string must be equal to the given width.
+     *
+     * If the given text is longer than the given width, the text is returned as is.
+     *
+     * If the whitespace padding on the left and right sides are not equal, you
+     * can add the extra space to either side, as long as the total width is equal
+     * to the given width. You can assume that the text only contains a single line.
+     *
+     * @param text  The input text to be centered, for example "Java".
+     * @param width The width of the string, for example 6.
+     * @return The text centered in a string of the given width: " Java ".
+     */
+    public String center(String text, int width) {
+        return null; // TODO: implement this method
+    }
+
+    /**
+     * THIS IS AN EXTRA EXERCISE, AND IT'S ONLY TESTED IN THE JUNIT TESTS IF IT
+     * RETURNS A NON-NULL VALUE. IF YOU WANT TO SKIP THIS METHOD, JUST KEEP IT AS IS
+     * AND RETURN NULL.
+     *
+     * Returns the given text centered in a string of a given width. Unlike the
+     * `center` method, this method can handle multi-line text. Each line needs to
+     * be centered separately.
+     *
+     * For example, given the two-line text "center\nstring" and the width 8, this
+     * method should generate and return " center \n string ".
+     *
+     * Same rules as in the `center` method apply for each line. If a line is longer
+     * than the given width, the line is kept as is. If the whitespace padding on
+     * the left and right sides are not equal, you can add the extra space to either
+     * side.
+     *
+     * @param text      The input text to be centered.
+     * @param lineWidth The width for each line in the returned string.
+     * @return The text formatted so that each line is centered separately.
+     */
+    public String centerMultiLine(String text, int lineWidth) {
+        // hint: you can split the text by newlines and use your `center` method to
+        // center each line separately
+
+        return null; // Implement this extra method if you want. It's not required.
+    }
 }
