@@ -51,33 +51,31 @@ You can run the tests either using your code editor's testing tool ([VS Code](ht
 .\gradlew.bat test --tests StringBasicsTest    # windows
 ```
 
-💡 *Jos testit eivät mene läpi, kokeile suorittaa komento uudestaan siten, että lisäät loppuun argumentin `--info`. Näin saat tarkemman tiedon siitä, mikä testissä meni pieleen. Vaihtoehtoisesti voit suorittaa testit koodieditorin testaustyökalulla ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)), joka tyypillisesti näyttää virheet selkeästi.*
+💡 *If the tests do not pass, try running the command again with the `--info` argument at the end. This will give you more detailed information about what went wrong in the test. Alternatively, you can run the tests using the testing tool in your code editor ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)), which typically displays errors clearly.*
 
-💡 *Sinun ei tarvitse perehtyä varsinaisen testin tekniseen toteutukseen. Tässä vaiheessa riittää, että suoritat testit ja tutustut niiden mahdollisesti tuottamiin virheilmoituksiin.*
+💡 *You do not need to familiarize yourself with the technical implementation of the actual test. At this stage, it is sufficient to run the tests and review any error messages they may produce.*
 
+### Part 2: collections *(recap, 30 %)*
 
-### Osa 2: kokoelmat *(kertaus, 30 %)*
+In the second part of the task, you need to implement the methods in the [CollectionsBasics](./src/main/java/part02/CollectionsBasics.java) class. Detailed descriptions of the correct functionality of each method can be found in the comments of each method.
 
-Tehtävän toisessa osassa sinun tulee toteuttaa [CollectionsBasics](./src/main/java/part02/CollectionsBasics.java)-luokassa olevat metodit. Tarkemmat selostukset kunkin metodin oikeasta toiminnasta löydät kunkin metodin kommenteista.
-
-Voit kirjoittaa metodien testaamiseksi oman `main`-metodin tai hyödyntää luokan testaamiseksi toteutettuja [JUnit](https://junit.org/)-testejä, jotka löydät luokasta [CollectionsBasicsTest](./src/test/java/part02/CollectionsBasicsTest.java). Voit jälleen suorittaa testit oman koodieditorisi testaustyökalulla tai Gradle-automaatiotyökalulla:
+You can write your own `main` method to test the methods or use the [JUnit](https://junit.org/) tests provided for the class, which you can find in the [CollectionsBasicsTest](./src/test/java/part02/CollectionsBasicsTest.java) class. You can again run the tests using your code editor's testing tool or the Gradle automation tool:
 
 ```
 ./gradlew test --tests CollectionsBasicsTest        # unix
 .\gradlew.bat test --tests CollectionsBasicsTest    # windows
 ```
 
-🚀 *Tulet todennäköisesti oppimaan kurssin edetessä aivan uusia tapoja näiden metodien toteuttamiseksi. Voit palata näihin metodeihin myöhemmin ja pohtia, miten toteuttaisit ne esimerkiksi Streamien avulla.*
+🚀 *You will likely learn entirely new ways to implement these methods as the course progresses. You can revisit these methods later and consider how you would implement them, for example, using Streams.*
 
+### Part 3: classes and objects *(recap, 20 + 20 %)*
 
-### Osa 3: luokat ja oliot *(kertaus, 20 + 20 %)*
+In the third part of the task, you first need to complete two Java classes:
 
-Tehtävän kolmannessa osassa sinun tulee ensin täydentää kahta Java-luokkaa:
+- [Person](./src/main/java/part03/Person.java) is a fairly simple Java class that models individuals with a name and age. The implementation of the class is incomplete, and you need to complete it according to the comments in the class and methods.
+- The [ObjectExercise](./src/main/java/part03/ObjectExercise.java) class, on the other hand, contains a single method where you are supposed to handle `Person` objects and combine the names of individuals into a single string. You can find the detailed rules for combining names in the method's comments.
 
-* [Person](./src/main/java/part03/Person.java) on varsin yksinkertainen Java-luokka, joka mallintaa henkilöitä, joilla on nimi ja ikä. Luokan toteutus on kesken ja sinun tulee täydentää se toimivaksi luokan ja metodien kommenttien mukaisesti.
-* [ObjectExercise](./src/main/java/part03/ObjectExercise.java)-luokka puolestaan sisältää yhden metodin, jossa sinun on tarkoitus käsitellä `Person`-olioita ja yhdistellä henkilöiden nimet yhdeksi merkkijonoksi. Tarkemmat säännöt nimien yhdistämiseksi löydät metodin kommenteista.
-
-Oman toteutuksen testaaminen tapahtuu edellisistä osista tuttuun tapaan oman `main`-metodin tai valmiiden JUnit-yksikkötestien avulla ([PersonTest.java](./src/test/java/part03/PersonTest.java), [ObjectExerciseTest.java](./src/test/java/part03/ObjectExerciseTest.java)). Mikäli käytät Gradle-työkalua, voit suorittaa testit komennolla:
+Testing your implementation is done in the same way as in the previous parts, using your own `main` method or the provided JUnit unit tests ([PersonTest.java](./src/test/java/part03/PersonTest.java), [ObjectExerciseTest.java](./src/test/java/part03/ObjectExerciseTest.java)). If you are using the Gradle tool, you can run the tests with the command:
 
 ```
 # unix
