@@ -8,7 +8,7 @@ This repository contains a set of Java exercises that will help you review the c
 
 In this file, you will find the assignments and instructions for testing your solutions. Detailed instructions on the functionality of each method and class can be found in the provided Java classes of the task template.
 
-Exercise's each section have ready made [JUnit](https://junit.org/) unit test, which are located in the [src/test/java/](./src/test/java/) directory. You can run the tests either using your code editor's testing tool  ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)) or using the [Gradle tool](https://docs.gradle.org/current/userguide/java_testing.html). You don't need to get into the technical implementation of the tests. Right now, it is enough that you run the tests and familiarize yourself with the possible error messages.
+Exercise's each section have ready made [JUnit](https://junit.org/) unit test, which are located in the [src/test/java/](./src/test/java/) directory. You can run the tests either using your code editor's testing tool ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)) or using the [Gradle tool](https://docs.gradle.org/current/userguide/java_testing.html). You don't need to get into the technical implementation of the tests. Right now, it is enough that you run the tests and familiarize yourself with the possible error messages.
 
 Note, that you can't change the names of the classes or methods, or the types of the parameters or return values. These kind of changes will cause compilation errors for the tests. If you happen to change a file and want to revert the changes, you can do that using the `git restore` command:
 
@@ -38,13 +38,13 @@ By clicking on the latest *"GitHub Classroom Workflow"* execution from the link 
 
 💡 *You can submit your solution for evaluation as many times as needed until the task deadline. However, make sure that the latest submission yields the best points, as only the most recent points will be valid.*
 
-### Osa 1: merkkijonot *(kertaus, 30 %)*
+### Part 1: strings *(recap, 30 %)*
 
-Java-luokassa [StringBasics](./src/main/java/part01/StringBasics.java) on metodeja, joista osa on virheellisiä ja osa toteuttamatta. Tehtävän ensimmäisessä osassa sinun tulee korjata ja täydentää nämä metodit. Tarkemmat selostukset kunkin metodin oikeasta toiminnasta löydät kunkin metodin kommenteista. Älä valmiiden metodien nimiä, parametreja tai paluuarvojen tyyppejä. Muutokset saattavat aiheuttaa ongelmia tehtävän automaattisen testauksen kanssa.
+In the Java class [StringBasics](./src/main/java/part01/StringBasics.java), there are methods, some of which are incorrect and some are incomplete. In the first part of the task, you need to correct and complete these methods. Detailed descriptions of the correct functionality of each method can be found in the comments of each method. Do not change the names, parameters, or return types of the existing methods. Changes may cause issues with the automatic testing of the task.
 
-Voit kirjoittaa metodien testaamiseksi oman `main`-metodin tai hyödyntää luokan testaamiseksi toteutettuja [JUnit](https://junit.org/)-testejä, jotka löydät luokasta [StringBasicsTest](./src/test/java/part01/StringBasicsTest.java).
+You can write your own `main` method to test the methods or use the [JUnit](https://junit.org/) tests provided for the class, which you can find in the class [StringBasicsTest](./src/test/java/part01/StringBasicsTest.java).
 
-Voit suorittaa testit joko koodieditorisi testaustyökalulla ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)) tai [Gradle-automaatiotyökalulla](https://docs.gradle.org/current/userguide/java_testing.html):
+You can run the tests either using your code editor's testing tool ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)) or using the [Gradle tool](https://docs.gradle.org/current/userguide/java_testing.html):
 
 ```
 ./gradlew test --tests StringBasicsTest        # unix
