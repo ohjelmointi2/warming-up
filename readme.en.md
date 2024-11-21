@@ -18,8 +18,6 @@ git restore path/to/the/file
 
 ## Starting the exerices
 
-Start by cloning the Git
-
 Start by cloning the Git repository to your own computer. The exercise must be done in your own copy, so make sure that your GitHub username is included in the repository address! You can create your own copy through the GitHub classroom link provided in your course exercise.
 
 ```sh
