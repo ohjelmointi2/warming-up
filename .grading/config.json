@@ -1,0 +1,28 @@
+{
+  "tests": [
+    {
+      "name": "01 StringBasicsTest",
+      "run": "./gradlew test --tests StringBasicsTest",
+      "timeout": "1m",
+      "points": 30
+    },
+    {
+      "name": "02 CollectionsBasicsTest",
+      "run": "./gradlew test --tests CollectionsBasicsTest",
+      "timeout": "1m",
+      "points": 30
+    },
+    {
+      "name": "03 PersonTest",
+      "run": "./gradlew test --tests PersonTest",
+      "timeout": "1m",
+      "points": 20
+    },
+    {
+      "name": "04 ObjectExerciseTest",
+      "run": "./gradlew test --tests ObjectExerciseTest",
+      "timeout": "1m",
+      "points": 20
+    }
+  ]
+}
