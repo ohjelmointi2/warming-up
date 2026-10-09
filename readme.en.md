@@ -8,7 +8,7 @@ This repository contains a set of Java exercises that will help you review the c
 
 In this file, you will find the assignments and instructions for testing your solutions. Detailed instructions on the functionality of each method and class can be found in the provided Java classes of the task template.
 
-Exercise's each section have ready made [JUnit](https://junit.org/) unit test, which are located in the [src/test/java/](./src/test/java/) directory. You can run the tests either using your code editor's testing tool ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)) or using the [Gradle tool](https://docs.gradle.org/current/userguide/java_testing.html). You don't need to get into the technical implementation of the tests. Right now, it is enough that you run the tests and familiarize yourself with the possible error messages.
+Exercise's each section have ready made [JUnit](https://junit.org/) unit test, which are located in the [src/test/java/](./src/test/java/) directory. You can run the tests either using your [code editor's testing tool](https://code.visualstudio.com/docs/java/java-testing) or using the [Gradle tool](https://docs.gradle.org/current/userguide/java_testing.html). You don't need to get into the technical implementation of the tests. Right now, it is enough that you run the tests and familiarize yourself with the possible error messages.
 
 Note, that you can't change the names of the classes or methods, or the types of the parameters or return values. These kind of changes will cause compilation errors for the tests. If you happen to change a file and want to revert the changes, you can do that using the `git restore` command:
 
@@ -18,23 +18,21 @@ git restore path/to/the/file
 
 ## Starting the exerices
 
-Start by cloning the Git repository to your own computer. The exercise must be done in your own copy, so make sure that your GitHub username is included in the repository address! You can create your own copy through the GitHub classroom link provided in your course exercise.
+Start by cloning the Git repository to your own computer. The exercise must be done in your own copy, so make sure that your GitHub username is included in the repository address!
 
 ```sh
 git clone https://github.com/make-sure-that-the-repository-address-contains-your-account.git
 ```
 
-Once you have cloned the repository, open it in your code editor.
+Once you have cloned the repository, open it in your code editor. Alternatively, you can also use cloud-based development environments such as [GitHub Codespaces](https://github.com/features/codespaces), where VS Code, Git, and Java are already installed.
 
 ## Submitting solutions
 
 Once you have solved some or all of the tasks and committed your answers, submit the solutions for evaluation using the `git push` command. Git push will automatically trigger a GitHub Actions workflow that compiles and tests your solutions, providing a pass or fail result for each test.
 
-Once the GitHub Actions has executed your code, you see the results in your GitHub repository's [Actions tab](../../actions/workflows/classroom.yml). It usually takes a few minutes for the assesment to be completed. 
+Once the GitHub Actions has executed your code, you see the results in your GitHub repository's actions tab. It usually takes a few minutes for the assesment to be completed.
 
-By clicking on the latest *"GitHub Classroom Workflow"* execution from the link above, you will get detailed information about the task evaluation. At the bottom of the page, you can see the points you received. By clicking on the "Autograding" heading, you can view the steps performed during the evaluation and their results in more detail. You can find an illustrated guide on this topic in the GitHub documentation [View autograding results (github.com)](https://docs.github.com/en/education/manage-coursework-with-github-classroom/learn-with-github-classroom/view-autograding-results).
-
-💡 *You can submit your solution for evaluation as many times as needed until the task deadline. However, make sure that the latest submission yields the best points, as only the most recent points will be valid.*
+You can submit your solution for evaluation as many times as needed until the task deadline. However, make sure that the latest submission yields the best points, as only the most recent points will be valid.
 
 ### Part 1: strings *(recap, 30 %)*
 
@@ -42,16 +40,14 @@ In the Java class [StringBasics](./src/main/java/part01/StringBasics.java), ther
 
 You can write your own `main` method to test the methods or use the [JUnit](https://junit.org/) tests provided for the class, which you can find in the class [StringBasicsTest](./src/test/java/part01/StringBasicsTest.java).
 
-You can run the tests either using your code editor's testing tool ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)) or using the [Gradle tool](https://docs.gradle.org/current/userguide/java_testing.html):
+You can run the tests either using [your code editor's testing tool](https://code.visualstudio.com/docs-testing) or with Gradle:
 
 ```
 ./gradlew test --tests StringBasicsTest        # unix
 .\gradlew.bat test --tests StringBasicsTest    # windows
 ```
 
-💡 *If the tests do not pass, try running the command again with the `--info` argument at the end. This will give you more detailed information about what went wrong in the test. Alternatively, you can run the tests using the testing tool in your code editor ([VS Code](https://code.visualstudio.com/docs/java/java-testing), [Eclipse](https://www.vogella.com/tutorials/JUnitEclipse/article.html)), which typically displays errors clearly.*
-
-💡 *You do not need to familiarize yourself with the technical implementation of the actual test. At this stage, it is sufficient to run the tests and review any error messages they may produce.*
+You do not need to familiarize yourself with the technical implementation of the actual test. At this stage, it is sufficient to run the tests and review any error messages they may produce.
 
 ### Part 2: collections *(recap, 30 %)*
 
